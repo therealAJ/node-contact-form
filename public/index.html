@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Form</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <!--Import main.css-->
+    <link type="text/css" rel="stylesheet" href="/public/css/main.css" />
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
+    <div id="form" class="row container center 
+        z-depth-5">
+
+        <form id="name-field" class="col s12">
+            <div class="row">
+                <div class="input-field col s12 white-text">
+                    <input class="input-field-text" id="name" type="text">
+                    <label for="name" class="login-text">Name</label>
+                </div>
+            </div>
+        </form>
+
+        <form id="email-field" class="col s12">
+            <div class="row">
+                <div class="input-field col s12 white-text">
+                    <input class="input-field-text" id="email" type="email" class="validate">
+                    <label for="email" class="login-text">Email</label>
+                </div>
+            </div>
+        </form>
+
+
+        <form id="message-field" class="col s12">
+            <div class="row">
+                <div class="input-field col s12 white-text">
+                    <textarea id="textarea1" class="materialize-textarea" type="text-area"></textarea>
+                    <label for="textarea1" class="login-text">Message</label>
+                </div>
+            </div>
+        </form>
+
+        <a class="waves-effect waves-light btn-large black homepage-buttons button-text center"> Send email </a>
+    </div>
+
+
+
+
 
 </body>
 
