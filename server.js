@@ -13,4 +13,5 @@ app.listen(8080, function (err) {
 
 app.get('/', function (req, res) {
     res.sendfile('./public/index.html');
+    res.sendfile('./public/css/main.css')
 });
