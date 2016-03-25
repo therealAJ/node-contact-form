@@ -3,6 +3,11 @@ var nodemailer = require('nodemailer');
 
 var app = express();
 
+
+
+app.use(express.static(__dirname + '/public'));
+
+
 app.listen(8080, function (err) {
     if (err) {
         console.log(err);
@@ -13,5 +18,4 @@ app.listen(8080, function (err) {
 
 app.get('/', function (req, res) {
     res.sendfile('./public/index.html');
-    res.sendfile('./public/css/main.css')
 });
