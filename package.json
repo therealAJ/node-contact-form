@@ -1,23 +1,23 @@
 {
-  "name": "node-contact-form",
-  "version": "1.0.0",
-  "description": "A Node.js powered contact form",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/therealAJ/node-contact-form.git"
-  },
-  "author": "Alex Jordache",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/therealAJ/node-contact-form/issues"
-  },
-  "homepage": "https://github.com/therealAJ/node-contact-form#readme",
-  "dependencies": {
-    "express": "^4.13.4",
-    "nodemailer": "^2.3.0"
-  }
+    "name": "node-contact-form",
+    "version": "1.0.0",
+    "description": "A Node.js powered contact form",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/therealAJ/node-contact-form.git"
+    },
+    "author": "Alex Jordache",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/therealAJ/node-contact-form/issues"
+    },
+    "homepage": "https://github.com/therealAJ/node-contact-form#readme",
+    "dependencies": {
+        "express": "^4.13.4",
+        "nodemailer": "0.7.1"
+    }
 }

@@ -14,6 +14,11 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+
 </head>
 
 <body>
@@ -22,6 +27,31 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            var from, to, subject, text;
+            $("#send_email").click(function () {
+                // enter your email account that you want to recieve emails at. 
+                to = "";
+                name = $("#name").val();
+                from = $("#user_email").val();
+                text = $("#textarea1").val();
+                // $("#message").text("Sending E-mail...Please wait");
+                $.get("http://localhost:8080/send", {
+                    to: to,
+                    name: name,
+                    from: from,
+                    text: text
+                }, function (data) {
+                    if (data == "sent") {
+
+                        console.log("Email sent");
+                    }
+
+                });
+            });
+        });
+    </script>
 
     <div id="form" class="row container center 
         z-depth-5">
@@ -38,7 +68,7 @@
         <form id="email-field" class="col s12">
             <div class="row">
                 <div class="input-field col s12 white-text">
-                    <input class="input-field-text" id="email" type="email" class="validate">
+                    <input class="input-field-text" id="user_email" type="email" class="validate">
                     <label for="email" class="login-text">Email</label>
                 </div>
             </div>
@@ -52,7 +82,7 @@
                 </div>
             </div>
         </form>
-        <a class="waves-effect waves-light btn-large black homepage-buttons button-text center"> Send email </a>
+        <a id="send_email" class="waves-effect waves-light btn-large black homepage-buttons button-text center"> Send email </a>
 
     </div>
 

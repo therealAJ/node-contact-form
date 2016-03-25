@@ -7,12 +7,12 @@ var smtpTransport = nodemailer.createTransport("SMTP", {
 
     service: 'Gmail',
     auth: {
+        // enter your gmail account
         user: "",
+        // enter your gmail password
         pass: ""
     }
 });
-
-
 
 app.use(express.static(__dirname + '/public'));
 
@@ -24,8 +24,9 @@ app.get('/', function (req, res) {
 app.get('/send', function (req, res) {
 
     var mailOptions = {
-        name: req.query.name,
         to: req.query.to,
+        name: req.query.name,
+        from: req.query.from,
         text: req.query.text
     }
 
@@ -41,7 +42,6 @@ app.get('/send', function (req, res) {
     });
 
 });
-
 
 app.listen(8080, function (err) {
     if (err) {
