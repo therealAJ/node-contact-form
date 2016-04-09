@@ -25,9 +25,10 @@ app.get('/send', function (req, res) {
 
     var mailOptions = {
         to: req.query.to,
-        subject: req.query.name,
-        from: req.query.from,
-        html: req.query.text
+        subject: 'Contact Form Message',
+        from: "Contact Form Request" + "<" + req.query.from + '>',
+        html:  "From: " + req.query.name + "<br>" +
+               "User's email: " + req.query.user + "<br>" +     "Message: " + req.query.text 
     }
 
     console.log(mailOptions);
