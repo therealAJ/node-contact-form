@@ -5,7 +5,7 @@ A contact form built using Node.js
 [![License] (https://img.shields.io/badge/license-MIT%20License-blue.svg)]()
 [![Dependency Status](https://img.shields.io/david/therealAJ/node-contact-form.svg)](https://david-dm.org/therealAJ/node-contact-form)
 [![Git Stars](https://img.shields.io/github/stars/therealAJ/node-contact-form.svg)](https://github.com/therealAJ/node-contact-form)
-[![Version] (https://img.shields.io/badge/version-1.0.0-orange.svg)]()
+[![Version] (https://img.shields.io/badge/version-1.1.0-orange.svg)]()
 
 
 ![alt tag] (https://raw.githubusercontent.com/therealAJ/node-contact-form/master/public/img/node-contact-form.png)
