@@ -50,6 +50,16 @@
             });
         });
     </script>
+    
+    <!--Modal Trigger Script-->
+    <script> 
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+    </script>
+    
+    
 
     <div id="form" class="row container center 
         z-depth-5">
@@ -80,7 +90,22 @@
                 </div>
             </div>
         </form>
-        <a id="send_email" class="waves-effect waves-light btn-large black homepage-buttons button-text center"> Send email </a>
+        <a id="send_email" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger" href="#modal1"> Send email </a>
+
+        
+        <!-- Message Sent Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer thank-you-modal">
+            <div class="modal-content">
+                <h4>Thank you!</h4>
+                <p>Your email has been sent. I'll get back to you shortly.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+            </div>
+        </div>
+
+
+
 
     </div>
 

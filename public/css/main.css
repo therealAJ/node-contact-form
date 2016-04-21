@@ -39,6 +39,13 @@ body {
     font-size: 1.5em !important;
 }
 
+
+.thank-you-modal {
+    height: 30% !important;   
+}
+
+
+
 .input-field-text {
     font-size: 1.5em !important;
 }
